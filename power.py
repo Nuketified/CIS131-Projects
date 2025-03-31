@@ -2,6 +2,15 @@
 
 # define recursive function
 def power(base, exponent):
+    """Calculate the value of an esponent expression. 
+            
+            Paramaters:
+                base (int): an integer
+                exponent (int): a non-negative integer
+            
+            Returns:
+                a recursive call to the function unless the base case is met or until the base case is met            
+    """
     if exponent == 1:
        return base
     if exponent > 1:
@@ -12,6 +21,10 @@ def power(base, exponent):
     
 # user program
 def exponent():
+    """Calculate and print the value of an exponent expression. Get then validate user inputs to ensure no negative esponents are passed to the power() function.
+    
+    
+    """
   
     # get and validate base
     while True:
@@ -43,5 +56,5 @@ def exponent():
     # print the answer
     print(f"\n{your_answer}")
 
-
+# call exponent function
 exponent()
