@@ -1,15 +1,22 @@
-# Exponent calculator
+"""script: power.py
+   action: a. get and validate user inputs for a base and power
+           b. computes the exponential expression 
+           c. prints the outcome to the user
+   author: Mat Bakarich
+   date:   03/31/2025
+"""
 
 # define recursive function
 def power(base, exponent):
-    """Calculate the value of an esponent expression. 
+    """Calculate the value of an exponent expression. 
+        action: calculate the expnoential expression for base^power    
+        input: none
+        output: none    
+        paramaters:
+            base (int): an integer
+            exponent (int): a non-negative integer
             
-            Paramaters:
-                base (int): an integer
-                exponent (int): a non-negative integer
-            
-            Returns:
-                a recursive call to the function unless the base case is met or until the base case is met            
+        return: a recursive call to the function unless the base case is met or until the base case is met            
     """
     if exponent == 1:
        return base
@@ -21,9 +28,14 @@ def power(base, exponent):
     
 # user program
 def exponent():
-    """Calculate and print the value of an exponent expression. Get then validate user inputs to ensure no negative esponents are passed to the power() function.
-    
-    
+    """Calculate and print the value of an exponent expression. 
+    action: prompt user to input base and power
+            validate user inputs
+            call power() function and pass inputs as arguments
+    input: base (int): an integer for the base
+           base (int): a postive intrger for the exponent
+    output: print the value of the exponential expression
+    return: none
     """
   
     # get and validate base
@@ -37,9 +49,6 @@ def exponent():
             print("Base must be an integer.")
         
        
-
-
-
     # get and validate exponent
     while True:    
         try:
@@ -51,8 +60,10 @@ def exponent():
         except ValueError:
             print("Exponent must be an integer.")
 
-    # call power function and pass inputs
+
+    # call power function and pass inputs, store the result in a variable
     your_answer = power(your_base,your_exponent)
+    
     # print the answer
     print(f"\n{your_answer}")
 
