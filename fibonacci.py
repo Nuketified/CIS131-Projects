@@ -1,7 +1,18 @@
+"""script: fibonacci.py
+   action: a. receive a value for n
+           b. test for base cases
+           c. return a recursive call to fibonacci()
+   author: Mat Bakarich
+   date:   03/31/2025 
+"""
 def fibonacci(n):
     """Calculate the nth Fibonacci number and track the total number of function calls.
-       Returns a tuple where the first element is the Fibonacci number and the second element is
-       the total number of function calls made to fibonacci().
+       action: test for base cases
+               return a tuple when the base case is met
+               otherwise return a recursive call to fibonacci() 
+       output: none
+       return: a tuple where the first element is the Fibonacci number and the second element is
+               the total number of function calls made to fibonacci().
     """
    
     if n in (0, 1): # base cases
